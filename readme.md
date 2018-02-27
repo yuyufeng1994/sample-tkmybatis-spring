@@ -1,4 +1,4 @@
-##sample-tkmybatis-spring
+## sample-tkmybatis-spring
 
 
 #### 调试
@@ -8,6 +8,6 @@
 * 相关配置：generator.properties、generatorConfig.xml 对应配置
 * 执行maven命令 mybatis-generator:generate -e
 
-####相关文档
+#### 相关文档
 * [mybatis官方文档](http://www.mybatis.org/mybatis-3/)
 * [tkmybatis文档](mapperhelper.github.io)
