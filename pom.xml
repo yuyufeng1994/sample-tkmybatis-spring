@@ -111,11 +111,7 @@
         </dependency>
         <!--mybatis与spring结合依赖 end-->
 
-        <dependency>
-            <groupId>javax.persistence</groupId>
-            <artifactId>persistence-api</artifactId>
-            <version>1.0</version>
-        </dependency>
+
 
 
     </dependencies>
