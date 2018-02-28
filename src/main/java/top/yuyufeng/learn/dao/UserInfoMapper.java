@@ -6,10 +6,14 @@ import top.yuyufeng.learn.modal.UserInfo;
 
 import java.util.List;
 
+/**
+ * @author yuyufeng
+ */
 public interface UserInfoMapper extends Mapper<UserInfo> {
 
     /**
-     * 批量插入
+     * 批量插入用户
+     * @param userInfos
      */
     void insertBatch(@Param("userInfos") List<UserInfo> userInfos);
 
