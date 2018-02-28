@@ -1,5 +1,5 @@
 ## sample-tkmybatis-spring
-
+> mybatis的Spring版本demo，增加了tkmybatis、generator插件，方便今后开发
 
 #### 调试
 > test目录下直接单元调试，测试运行，查看流程。
