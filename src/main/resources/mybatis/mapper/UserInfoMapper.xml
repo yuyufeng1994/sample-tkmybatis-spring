@@ -18,4 +18,13 @@
     -->
     user_id, user_name, create_time, user_email
   </sql>
+
+  <insert id="insertBatch" parameterType="java.util.List">
+    insert into user_info (user_name, create_time, user_email)
+    values
+    <foreach collection="userInfos" index="index" item="item"  separator="," >
+      (#{item.userName,jdbcType=VARCHAR}, #{item.createTime,jdbcType=TIMESTAMP}, #{item.userEmail,jdbcType=VARCHAR})
+    </foreach>
+  </insert>
+
 </mapper>

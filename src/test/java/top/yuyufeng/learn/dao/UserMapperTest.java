@@ -9,6 +9,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import top.yuyufeng.learn.modal.UserInfo;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -67,6 +68,15 @@ public class UserMapperTest {
         }
     }
 
+
+    @Test
+    public void testInsertBatch() {
+        List<UserInfo> list = new ArrayList<>();
+        list.add(new UserInfo(null,"用户名batch1",new Date(),"aa@qq.com"));
+        list.add(new UserInfo(null,"用户名batch2",new Date(),"aa@qq.com"));
+        userInfoMapper.insertBatch(list);
+
+    }
 
     @Test
     public void test() {
