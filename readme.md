@@ -6,8 +6,8 @@
 
 #### 配置
 * 数据库结构：/doc目录下的sql文件
-* 数据库连接信息：根目录 /jdbc.properties
-* generator配置：/mybatis 目录下 generator*文件
+* 数据库连接信息：/jdbc.properties
+* generator配置：/mybatis目录下generator*文件
 
 #### generator从数据库生成class、mapper、xml
 * 相关配置：generator.properties、generatorConfig.xml 对应配置
